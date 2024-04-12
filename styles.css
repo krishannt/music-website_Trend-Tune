@@ -17,6 +17,9 @@ font-weight: 300;
 line-height: 1.4;
 scroll-behavior: smooth;
 }
+section{
+    scroll-margin: 50px;
+}
 ul{
   
     list-style: none;
@@ -104,9 +107,6 @@ nav ul li:hover{
     color: white;
 }
 
-.music-cection > * {
-    margin-bottom: 30px; /* Adjust the spacing between elements */
-}
 .ipad-iphone-img{
     margin-top: -400px;
     position: relative;
@@ -116,7 +116,89 @@ nav ul li:hover{
     background-color: var(--red600);
     color: #f9f6ff;
 }
-.secondary-btn{
+.secondary-btn {
+    background-color: var(--purple500); /* Adjusted to use the custom color variable */
+    color: white;
+    /* Add any other styles you need */
+}
+
+.about-music{
+    padding-top: 500px;
+    display: grid;  
+    place-items: center;
+    gap: 50px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.video-section {
+    min-height: 800px;
+    display: grid;
+    place-items: center;
+    color: white;
+    text-align: center;
+    position: relative; /* Ensure relative positioning for absolute positioning of the video */
+}
+
+#video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the entire container */
+    z-index: -1;
+}
+
+.video-section .container {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    /* Adjust margin as needed */
+    margin: auto; /* Center the container horizontally */
+    max-width: 600px; /* Example max width, adjust as needed */
+    padding: 0 20px; /* Example padding, adjust as needed */
+}
+
+.hero-section,.video-section{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gift-section {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+    gap: 50px;
+
+}
+.gift-contant{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-upper{
+    background-color: var(--purple600);
+    padding: 20px;
+}
+.footer-upper .conteiner{
+     display: flex;
+     color: white;
+     justify-content: space-around;
+}
+.footer-upper h4{
+    padding-bottom: 10px;
+    border-bottom: 2px solid white;
+    margin-bottom: 10px;
+}
+.footer-lower{
     background-color: var(--purple300);
-    color: #f9f6ff;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.gift-section{
+    scroll-margin: 120px;
 }
